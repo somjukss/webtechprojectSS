@@ -1,0 +1,89 @@
+body {
+    background: url("image/bgstone.jpg") no-repeat center #212121/cover;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+
+  }
+  /* navbar */
+  .nav-bar .menu ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0.5em;
+    margin: 0;
+  }
+  .nav-bar .menu ul li {
+    list-style: none;
+  }
+  .nav-bar .menu ul li a {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 2em 1em;
+    text-shadow: 0px 0px 6px #333;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-bar .menu ul li a:hover {
+    color: #B82318;
+    transition: all 0.2s ease-in-out;
+  }
+  @media all and (min-width: 50em) {
+    .nav-bar {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 1000px;
+      background: none;
+      padding: 0 3%;
+    }
+  }
+  /* navbar */
+  /* details */
+  table{
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: rgba(27, 27, 27, 0.2); */
+  }
+  h1,h2,h3,h4,h5,p{
+    color: rgb(255, 255, 255);
+}
+  h1{
+    margin-top: 5%;
+    font-size: 3vw;
+    background-color: rgba(252, 193, 0, 0.493)
+  }
+  h2{
+    font-size: 2vw;
+    background-color: rgba(252, 248, 0, 0.493)
+  }
+  h3{
+    text-align: left;
+    font-size: 1.5vw;
+  }
+  h4{
+    margin-top: 5%;
+    font-size: 3vw;
+    background-color:  rgba(252, 248, 0, 0.493)
+  }
+  h5{
+    margin-top: 5%;
+    font-size: 3vw;
+    background-color:  rgba(164, 252, 0, 0.493)
+  }
+  p{
+    text-align: left;
+    font-size: 1.1vw;
+    font-weight: lighter;
+  }
+  /* details */
