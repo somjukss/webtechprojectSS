@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="gem_of_month.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon"> 
 	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon"> 
@@ -21,5 +22,42 @@
 		  </ul>
 		</nav> 
 	</div>
+	<div class="color-intro">
+		<p><b>"หินสี"</b>จัดให้เป็นอัญมณีคุณภาพต่ำ ที่มีลักษณะคล้ายคลึงกันกับพลอยแต่เป็นพลอยแฟชั่น 
+			ที่ไม่มีคุณค่าทางการลงทุนเหมือน เพชร หรือพลอยน้ำดี เพราะหินสีส่วนมากจะมีเนื้อขุ่นและมีมลทินอยู่ภายใน 
+			ทำให้หินสีมีราคาถูกมากเมื่อเทียบกับอัญมณีชนิดอื่น</p>
+		<h1>สีของหินเกิดจากอะไร?</h1><p>ขึ้นชื่อว่าหินสี เรื่องสีจึงเป็นสิ่งสำคัญแต่หินแบบที่ใสไม่มีสีก็มี 
+			สีที่แตกต่างกันของหินเกิดจากสีในแร่ที่แตกต่างกัน โดยธาตุให้สีอาจเป็นองค์ประกอบในสูตรเคมีของแร่ 
+			ถ้าเป็นแร่ชนิดเดียวกันจะทำให้เกิดสีสันสวยงามที่ความเข้มระดับแตกต่างกันไปขึ้นอยู่กับปริมาณแร่สี</p>
+	</div>
+	<div class="predic">
+		<h1>อัญมณีตามเดือนเกิด</h1>
+	</div>
+	<div class="box-choose">
+		<form id="months" action="" method="post" onsubmit="return gem_month()">
+				<select name="mymonth" id="mymonth">
+						<option value="00" selected="selected">โปรดเลือกเดือนด้วยครับ</option>
+						<option value="01">มกราคม</option>
+						<option value="02">กุมภาพันธ์</option>
+						<option value="03">มีนาคม</option>
+						<option value="04">เมษายน</option>
+						<option value="05">พฤษภาคม</option>
+						<option value="06">มิถุนายน</option>
+						<option value="07">กรกฏาคม</option>
+						<option value="08">สิงหาคม</option>
+						<option value="09">กันยายน</option>
+						<option value="10">ตุลาคม</option>
+						<option value="11">พฤศจิกายน</option>
+						<option value="12">ธันวาคม</option>
+					</select>
+					<input type="submit" name="submit" value="submit" id="submit">
+		</form>
+	</div>
+	<div id="box-stone" style="">
+		<p id="topic"></p>
+		<img id="image" src="" height="300px">
+		<p id="c-text"></p>
+	</div>
+	
 </body>
 </html>

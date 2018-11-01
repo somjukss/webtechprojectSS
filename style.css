@@ -180,9 +180,58 @@ h1{
   color: #fff;
 }
 p{
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
 }
+/* gem */
+/* colorstone */
 #colorstone-bg{
-background: url(image/colorstonebg.jpg);
+  background: url(image/colorstonebg.jpg);
+  background-attachment: fixed;
+  }
+.predic h1{
+  color: rgb(255, 255, 255);
+    font-size: 3vw;
+    text-align: center;
+    border: 2px solid rgba(216, 195, 3, 0.973);
+    background-color: rgba(51, 51, 51, 0.7);
+    width: 31%;
+    margin: 2% auto;
 }
+.color-intro{
+  color: rgb(255, 255, 255);
+  margin: 5% 10% 5% 45%;
+}
+.color-intro b{
+  font-size: 5vw;
+}
+.color-intro h1{
+  font-size: 2vw;
+}
+#topic{
+  font-size: 3vw;
+}
+.box-choose{
+  margin: 3% auto;
+  text-align: center;
+}
+#mymonth,#submit{
+  font-size: 150%;
+}
+#box-stone{
+  text-align: center;
+
+}
+#topic{
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+#c-text{
+  font-size: 1.3vw;
+  margin: 3% 20%;
+  color: rgb(0, 0, 0);
+}
+#box-c{
+  background-color: beige
+}
+/* colorstone */
