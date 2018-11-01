@@ -87,3 +87,104 @@ body {
     font-weight: lighter;
   }
   /* details */
+  /* exbox */
+  .ex-pic {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px;
+    min-width: 225px;
+    max-width: 225px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    background: #000;
+  }
+  
+  .ex-pic *,
+  .ex-pic:before,
+  .ex-pic:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  
+  .ex-pic img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+  }
+  
+  .ex-pic:before,
+  .ex-pic:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: '';
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .ex-pic:before {
+    width: 0;
+    height: 1px;
+  }
+  
+  .ex-pic:after {
+    height: 0;
+    width: 1px;
+  }
+  
+  .ex-pic figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 20px;
+  }
+  
+  .ex-pic h1,
+  .ex-pic h4,
+  .ex-pic h5 {
+    margin: 0;
+    font-size: 2.1vw;
+    font-weight: normal;
+    opacity: 0;
+  }
+  .ex-pic:hover img{
+    zoom: 1;
+    filter: alpha(opacity=20);
+    -webkit-opacity: 0.2;
+    opacity: 0.2;
+  }
+  
+  .ex-pic:hover:before,
+  .ex-pic:hover:after {
+    opacity: 1;
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+  }
+  
+  .ex-pic:hover:before {
+    width: 40px;
+  }
+  
+  .ex-pic:hover:after {
+    height: 40px;
+  }
+  
+  .ex-pic:hover h1,
+  .ex-pic:hover h4,
+  .ex-pic:hover h5{
+    opacity: 1;
+  }
+  
+  .ex-pic:hover h1,
+  .ex-pic:hover h4,
+  .ex-pic:hover h5 {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  /* exbox */
