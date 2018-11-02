@@ -50,13 +50,20 @@
 						<option value="11">พฤศจิกายน</option>
 						<option value="12">ธันวาคม</option>
 					</select>
-					<input type="submit" name="submit" value="submit" id="submit">
+					<input type="submit" name="submit" value="submit" id="submit" onclick="setTimeout(test,100)">
 		</form>
 	</div>
+	<script>
+		function test(){
+			var ele = document.getElementById("c-text");
+			ele.scrollIntoView(true);
+		}
+	</script>
 	<div id="box-stone" style="">
 		<p id="topic"></p>
 		<img id="image" src="" height="300px">
 		<p id="c-text"></p>
+		</a>
 	</div>
 	
 </body>
