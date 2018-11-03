@@ -158,6 +158,8 @@ h1{
   display: flex;
   margin: 1% 15%;
   border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: hsla(32, 100%, 35%, 0.897);
 }
 .gem-text{
   margin: 1% 2.2%;
@@ -173,6 +175,10 @@ h1{
 }
 .gem-image{
   margin: 1.2%;
+  
+}
+.gem-image img{
+  border-radius: 5px;
 }
 .gem-intro{
   text-align: center;

@@ -71,6 +71,7 @@ body {
     opacity: 1;
     max-width: 100%;
     vertical-align: top;
+    border-radius: 10px;
   }
   .snip1247 figcaption {
     position: absolute;
@@ -93,6 +94,7 @@ body {
     -webkit-transition: all 0.25s ease-in;
     transition: all 0.25s ease-in;
     z-index: -1;
+    border-radius: 3px;
   }
   .snip1247 h3 {
     line-height: 40px;

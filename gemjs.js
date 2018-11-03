@@ -26,13 +26,18 @@ async function showme(){
 
         gemHead.appendChild(gemName)
 
+        let gemTopic = document.createElement("p")
+        gemTopic.setAttribute("class","gem-detail")
+
         let gemMean = document.createTextNode(gem.mean)
         let gemDetail = document.createTextNode(gem.detail)
 
+        gemTopic.appendChild(gemMean)
+        gemTopic.appendChild(document.createElement("br"))
+        gemTopic.appendChild(gemDetail)
+
         gemText.appendChild(gemHead)
-        gemText.appendChild(gemMean)
-        gemText.appendChild(document.createElement("br"))
-        gemText.appendChild(gemDetail)
+        gemText.appendChild(gemTopic)
         
         gemBox.appendChild(gemText)
 
