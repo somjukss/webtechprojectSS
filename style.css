@@ -10,8 +10,19 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
   }
   /* index */
+  header{
+    /* padding: 100%;
+    background-color: #fff;
+    overflow:scroll; */
+  }
   .img-clip-block {
-    margin: 58px 0;
+    /* margin: 5% auto;
+    max-width: 700px;
+    height: 100px; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .img-clip-row {
     text-align: center;
@@ -34,12 +45,12 @@ body {
   #stonecolor{
     width: 300px; 
     height: 300px; 
-    background-image: url("image/home2.png");
+    background-image: url("image/home2.png") ;
   }
   #gem{
     width: 300px; 
     height: 300px;
-    background-image: url("image/home3.png");
+    background-image: url("image/home3.png") ;
   }
   .overlay {
     background: hsla(30, 4%, 55%, 0.664);
@@ -95,18 +106,26 @@ body {
   .nav-bar .menu ul li {
     list-style: none;
   }
-  .nav-bar .menu ul li a {
+  .nav-bar .menu ul li .chioce{
     font-weight: 700;
     letter-spacing: 0.1em;
     color: #fff;
-    font-size: 1.2em;
-    padding: 2em 1em;
+    font-size: 1.5em;
     text-shadow: 0px 0px 6px #333;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid white;
   }
-  .nav-bar .menu ul li a:hover {
+  .nav-bar .menu ul li .chioce:hover {
     color: #B82318;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid rgb(236, 240, 6);
+  }
+  .nav-bar .menu ul li a img{
+    background-image: hidden;
+  }
+  .nav-bar .menu ul li a img:hover{
+    background-image: url(image/logohome2.png);
     transition: all 0.2s ease-in-out;
   }
   @media all and (min-width: 50em) {
@@ -122,7 +141,7 @@ body {
   /* navbar */
   /* stone */
 table{
-  height: 92vh;
+  height: 70vh;
   width: 80%;
   margin: 0 auto;
 }
@@ -131,12 +150,12 @@ h1{
 }
 .c{
   border-radius: 50%;
-  border: 10px solid rgba(255, 255, 255, 0.623);
   text-align: center;
   padding: 6px 5px 4px 5px;
   display: inline-block;
   min-width: 230px;
-  background-color: rgba(48, 47, 47, 0.5);
+  background-color: rgba(87, 82, 55, 0.692);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 .c:after {
   content: "";
@@ -148,10 +167,11 @@ h1{
 .c:hover {
   color: rgb(187, 159, 0);
   transition: all 0.2s ease-in-out;
-  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(216, 17, 17, 0.527);
  }
  #stone-bg{
-  background: url(image/colorstonebg.png);
+  background: url(image/colorstonebg.png) no-repeat center #212121/cover;
+  background-attachment: fixed;
  }
 /* gem */
 .gem-box{
@@ -169,7 +189,7 @@ h1{
   margin: 5px;
 }
 #gem-bg{
-  background: url(image/gembgg.jpg);
+  background: url(image/gembgg.jpg) no-repeat center #212121/cover;
   width: 100%;
   background-attachment: fixed;
 }
@@ -182,17 +202,20 @@ h1{
 }
 .gem-intro{
   text-align: center;
-  margin: 4% 13%;
+  margin: 4% 25%;
   color: #fff;
 }
+.gem-intro b{
+  font-size: 3vw;
+}
 p{
-  font-size: 20px;
+  font-size: 1.3vw;
   text-align: left;
 }
 /* gem */
 /* colorstone */
 #colorstone-bg{
-  background: url(image/colorstonebg.jpg);
+  background: url(image/colorstonebg.jpg) no-repeat center #212121/cover;
   background-attachment: fixed;
   }
 .predic h1{
@@ -200,9 +223,11 @@ p{
     font-size: 3vw;
     text-align: center;
     border: 2px solid rgba(216, 195, 3, 0.973);
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(51, 51, 51, 0.856);
     width: 31%;
     margin: 2% auto;
+    border-radius: 7px;
+    padding: 5px;
 }
 .color-intro{
   color: rgb(255, 255, 255);

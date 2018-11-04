@@ -22,18 +22,26 @@ body {
   .nav-bar .menu ul li {
     list-style: none;
   }
-  .nav-bar .menu ul li a {
+  .nav-bar .menu ul li .chioce{
     font-weight: 700;
     letter-spacing: 0.1em;
     color: #fff;
-    font-size: 1.2em;
-    padding: 2em 1em;
+    font-size: 1.5em;
     text-shadow: 0px 0px 6px #333;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid white;
   }
-  .nav-bar .menu ul li a:hover {
+  .nav-bar .menu ul li .chioce:hover {
     color: #B82318;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid rgb(236, 240, 6);
+  }
+  .nav-bar .menu ul li a img{
+    background-image: hidden;
+  }
+  .nav-bar .menu ul li a img:hover{
+    background-image: url(image/logohome2.png);
     transition: all 0.2s ease-in-out;
   }
   @media all and (min-width: 50em) {
