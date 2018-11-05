@@ -60,43 +60,45 @@ body {
       padding: 0 3%;
     }
   }
+
   /* navbar */
   /* details */
-  table{
-    width: 60%;
-    margin: 0 auto;
-    /* background-color: rgba(27, 27, 27, 0.2); */
+  .text-sub{
+    width: 65%;
+    margin: -3% auto;
+    color: #fff;
   }
-  h1,h2,h3,h4,h5,p{
-    color: rgb(255, 255, 255);
-}
-  h1{
-    margin-top: 5%;
-    font-size: 3vw;
-    background-color: rgba(252, 193, 0, 0.493)
+  .text-sub img{
+    width: 230px;
+    margin: 2% 30%;
   }
-  h2{
-    font-size: 2vw;
-    background-color: rgba(252, 248, 0, 0.493)
-  }
-  h3{
-    text-align: left;
+  .text-sub li{
     font-size: 1.5vw;
   }
-  h4{
-    margin-top: 5%;
-    font-size: 3vw;
-    background-color:  rgba(252, 248, 0, 0.493)
+  .text-sub p{
+    font-size: 1.3vw;
   }
-  h5{
-    margin-top: 5%;
-    font-size: 3vw;
-    background-color:  rgba(164, 252, 0, 0.493)
+  table{
+    text-align: center;
   }
-  p{
+  .img-main{
+    margin-left: -90%;
+  }
+  .text-main{
+    width: 77%;
+  }
+  .text-main b{
+    font-size: 5vw;
+  }
+  .text-main h1{
+    font-size: 2vw;
+  }
+  .text-main p{
     text-align: left;
     font-size: 1.3vw;
     font-weight: lighter;
+    color: #fff;
+    margin-left: 30%;
   }
   /* details */
   /* exbox */
@@ -116,11 +118,11 @@ body {
   
   .ex-pic *,
   .ex-pic:before,
-  .ex-pic:after {
+  .ex-pic:after,{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
   
   .ex-pic img {
@@ -175,8 +177,8 @@ body {
   .ex-pic:hover:before,
   .ex-pic:hover:after {
     opacity: 1;
-    -webkit-transition-delay: 0.25s;
-    transition-delay: 0.25s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   
   .ex-pic:hover:before {
@@ -196,7 +198,80 @@ body {
   .ex-pic:hover h1,
   .ex-pic:hover h4,
   .ex-pic:hover h5 {
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  .stonex-box{
+    margin: 1% 15%;
+  }
+  hr{
+    margin: 5% auto;
+    width: 80%;
   }
   /* exbox */
+  /* cy */
+  .cy-text p{
+    text-align: left;
+    font-size: 1.3vw;
+    font-weight: lighter;
+    color: #fff;
+  }
+  .cy-text b{
+    font-size: 4vw;
+    color: rgb(255, 255, 255);
+  }
+  .cy-text h1{
+    font-size: 2vw;
+    color: #fff;
+  }
+.cy{
+    margin: 3% 10%;
+  }
+.cy img{
+  width: 600px;
+}
+.cy-text{
+  margin-left: 3%;
+}
+.cy-vdo{
+  color: #fff;
+  text-align: center;
+  height: 300px;
+  margin: 3%;
+}
+.cy-vdo h1{
+  border: 2px solid rgba(216, 195, 3, 0.973);
+  border-radius: 7px;
+  background-color: rgba(51, 51, 51, 0.856);
+  box-shadow: 0 10px  rgb(102, 92, 2);
+  width: 40%;
+  margin: 2% auto;
+  padding: 1%;
+}
+/* ex */
+.ex-head{
+  color: #fff;
+  margin: 0 25%;
+}
+.ex-head b{
+  font-size: 3vw;
+}
+.ex-head p{
+  font-size: 1.3vw;
+  font-weight: lighter;
+
+}
+.ex-detail{
+  color: #fff;
+  margin: 0 15%;
+}
+.ex-detail b{
+  color: #fff;
+  font-size: 1.5vw;
+}
+.ex-detail p{
+  color: #fff;
+  font-size: 1.3vw;
+  font-weight: lighter;
+}
+ 

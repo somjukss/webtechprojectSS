@@ -11,6 +11,7 @@
 	<title>- มหัศจรรย์หินและอัญมณี -</title>
 </head>
 <body id="colorstone-bg">
+	<!-- navbar -->
 	<div class="nav-bar">
 		<nav id="menu" class="menu" role="navigation">
 			<ul >
@@ -22,6 +23,8 @@
 			</ul>
 		</nav> 
 	</div>
+	<!-- navbar -->
+	<!-- detial -->
 	<div class="color-intro">
 		<p><b>"หินสี"</b>จัดให้เป็นอัญมณีคุณภาพต่ำ ที่มีลักษณะคล้ายคลึงกันกับพลอยแต่เป็นพลอยแฟชั่น 
 			ที่ไม่มีคุณค่าทางการลงทุนเหมือน เพชร หรือพลอยน้ำดี เพราะหินสีส่วนมากจะมีเนื้อขุ่นและมีมลทินอยู่ภายใน 
@@ -36,7 +39,7 @@
 	<div class="box-choose">
 		<form id="months" action="" method="post" onsubmit="return gem_month()">
 				<select name="mymonth" id="mymonth">
-						<option value="00" selected="selected">--โปรดเลือกเดือนเกิดของคุณ--</option>
+						<option class="select-item" value="00" selected="selected">--โปรดเลือกเดือนเกิดของคุณ--</option>
 						<option value="01">มกราคม</option>
 						<option value="02">กุมภาพันธ์</option>
 						<option value="03">มีนาคม</option>
@@ -50,21 +53,21 @@
 						<option value="11">พฤศจิกายน</option>
 						<option value="12">ธันวาคม</option>
 					</select>
-					<input type="submit" name="submit" value="submit" id="submit" onclick="setTimeout(test,100)">
+					<input type="submit" name="submit" value="submit" id="submit" class="button" onclick="setTimeout(test,100)">
 		</form>
 	</div>
 	<script>
 		function test(){
-			var ele = document.getElementById("c-text");
+			var ele = document.getElementById("topic");
 			ele.scrollIntoView(true);
 		}
 	</script>
 	<div id="box-stone" style="">
 		<p id="topic"></p>
-		<img id="image" src="" height="350px">
+		<img id="image" src="" style ="height:300px; margin: -5% 0px 0;"> 
 		<p id="c-text"></p>
 		</a>
 	</div>
-	
+	<!-- detial -->
 </body>
 </html>

@@ -149,13 +149,13 @@ h1{
   color: #fff;
 }
 .c{
-  border-radius: 50%;
   text-align: center;
   padding: 6px 5px 4px 5px;
   display: inline-block;
   min-width: 230px;
+  transition: all 0.6s ease-in-out;
   background-color: rgba(87, 82, 55, 0.692);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 }
 .c:after {
   content: "";
@@ -166,8 +166,9 @@ h1{
 }
 .c:hover {
   color: rgb(187, 159, 0);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.6s ease-in-out;
   background-color: rgba(216, 17, 17, 0.527);
+  clip-path: polygon(49% 15%, 73% 15%, 100% 49%, 50% 100%, 50% 100%, 0 49%, 26% 15%);
  }
  #stone-bg{
   background: url(image/colorstonebg.png) no-repeat center #212121/cover;
@@ -176,10 +177,8 @@ h1{
 /* gem */
 .gem-box{
   display: flex;
-  margin: 1% 15%;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  background-color: hsla(32, 100%, 35%, 0.897);
+  margin: 1% 15% 5% 15%;
+  background-color: hsla(32, 100%, 35%, 0.7);
 }
 .gem-text{
   margin: 1% 2.2%;
@@ -199,14 +198,15 @@ h1{
 }
 .gem-image img{
   border-radius: 5px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .gem-intro{
   text-align: center;
-  margin: 4% 25%;
-  color: #fff;
+    margin: -1% 25% 5% 25%;
+    color: #fff;
 }
 .gem-intro b{
-  font-size: 3vw;
+  font-size: 5vw;
 }
 p{
   font-size: 1.3vw;
@@ -224,6 +224,7 @@ p{
     text-align: center;
     border: 2px solid rgba(216, 195, 3, 0.973);
     background-color: rgba(51, 51, 51, 0.856);
+    box-shadow: 0 9px  rgb(102, 92, 2);
     width: 31%;
     margin: 2% auto;
     border-radius: 7px;
@@ -246,8 +247,13 @@ p{
   margin: 3% auto;
   text-align: center;
 }
-#mymonth,#submit{
+#mymonth{
   font-size: 150%;
+  padding: 1%;
+}
+#submit{
+  font-size: 150%;
+  margin-left: 2%;
 }
 #box-stone{
   text-align: center;
@@ -262,5 +268,32 @@ p{
   font-size: 1.3vw;
   margin: 3% 20%;
   color: rgb(0, 0, 0);
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: rgba(216, 195, 3, 0.973);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px  rgb(102, 92, 2);
+}
+select{
+  background-color:rgba(216, 195, 3, 0.973);
+  border: #c96932;
+  border-radius: 10px;
+  box-shadow: 0 9px  rgb(102, 92, 2);
+}
+.button:hover {background-color: #ff3c00}
+
+.button:active {
+  background-color: #c96932;
+  box-shadow: 0 5px rgb(138, 36, 5);
+  transform: translateY(4px);
 }
 /* colorstone */
