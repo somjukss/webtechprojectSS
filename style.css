@@ -196,6 +196,7 @@ h1{
   background: url(image/colorstonebg.png) no-repeat center #212121/cover;
   background-attachment: fixed;
  }
+ /* stone */
 /* gem */
 .gem-box{
   display: flex;
