@@ -4,94 +4,116 @@ body {
     background-attachment: fixed;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
   * {
     box-sizing: border-box;
     font-family: 'Bai Jamjuree', sans-serif;
   }
-  /* index */
-  header{
-    /* padding: 100%;
-    background-color: #fff;
-    overflow:scroll; */
+/* index */
+#bg1, #bg2{
+  position: relative;
+  opacity: 0.;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    
+#bg1{
+  background-image: url(image/pexels-photo-749090.jpeg);
+  width: 100%;
+  min-height: 35vh;
+}
+#bg2{
+background-image: url(image/maxresdefault2.jpg);
+  width: 100%;
+  min-height: 100vh;
   }
-  .img-clip-block {
-    /* margin: 5% auto;
-    max-width: 700px;
-    height: 100px; */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .img-clip-row {
+.space{
+  margin-top:-3vh;
+  height:  50vh;
+  background: linear-gradient(to top,rgba(141, 109, 66, 0.932),rgba(73, 111, 146, 0.904));
+}
+.web-title{
+    font-size: 5vh;
     text-align: center;
+    margin: 0% 15%;
+}
+.img-clip-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-clip-row {
+  text-align: center;
+}
+.img-clip-wrap {
+  width: 300px; 
+  height: 300px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+#stone{
+  width: 300px; 
+  height: 300px; 
+  background-image: url("image/home1.png");
+}
+#stonecolor{
+  width: 300px; 
+  height: 300px; 
+  background-image: url("image/home2.png") ;
+}
+#gem{
+  width: 300px; 
+  height: 300px;
+  background-image: url("image/home3.png") ;
+}
+.overlay {
+  background: hsla(30, 4%, 55%, 0.664);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: all 0.3s linear;
+}
+.overlay-content {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 180%;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.img-clip-wrap:hover .overlay {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  background: none;
+}
+@media only screen and (min-width: 650px) {
+  .img-clip-row {
+    margin-top: -154px;
   }
+
+  .img-clip-row:first-of-type {
+    margin-top: auto;
+  }
+
   .img-clip-wrap {
-    width: 300px; 
-    height: 300px;
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    position: relative;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    display: inline-block;
   }
-  #stone{
-    width: 300px; 
-    height: 300px; 
-    background-image: url("image/home1.png");
-  }
-  #stonecolor{
-    width: 300px; 
-    height: 300px; 
-    background-image: url("image/home2.png") ;
-  }
-  #gem{
-    width: 300px; 
-    height: 300px;
-    background-image: url("image/home3.png") ;
-  }
-  .overlay {
-    background: hsla(30, 4%, 55%, 0.664);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    transition: all 0.3s linear;
-  }
-  .overlay-content {
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    font-size: 180%;
-    text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-  }
-  .img-clip-wrap:hover .overlay {
-    -webkit-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
-    background: none;
-  }
-  @media only screen and (min-width: 650px) {
-    .img-clip-row {
-      margin-top: -154px;
-    }
-  
-    .img-clip-row:first-of-type {
-      margin-top: auto;
-    }
-  
-    .img-clip-wrap {
-      display: inline-block;
-    }
-  }
-  /* index */
+}
+/* index */
   /* navbar */
   .nav-bar .menu ul {
     display: -moz-box;
@@ -242,6 +264,7 @@ p{
 }
 #topic{
   font-size: 3vw;
+  margin-top: 7%;
 }
 .box-choose{
   margin: 3% auto;
